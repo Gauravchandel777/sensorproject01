@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wafer fault detection</title>
+
+    <!-- normalize (as in your file) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- original stylesheet (your project) -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- partial:index.partial.html -->
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <div class="frame">
+            <div class="center">
+                <h1 class="title">Upload CSV for the prediction</h1>
+
+                <div class="dropzone">
+                    <!-- upload icon (as in your screenshot) -->
+                    <img src="https://100dayscss.com/codepen/upload.svg" class="upload-icon" alt="upload icon" />
+                    <input type="file" class="upload-input" name="file" accept=".csv" required>
+                </div>
+
+                <button type="submit" class="btn" name="uploadbutton">Upload file</button>
+            </div>
+        </div>
+    </form>
+    <!-- end partial -->
+
+    <!-- original pen: https://codepen.io/roydigerhund/pen/ZqdbeN (comment in your screenshot) -->
+    <!-- NO JS ADDED YET -->
+
+    <!-- jquery (kept because you had a script reference) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- your project script (if you have one) -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
